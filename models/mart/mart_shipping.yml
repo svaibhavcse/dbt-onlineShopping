@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: mart_shipping
+    description: "Table containing shipping data"
+    columns:
+      - name: region
+        description: "Region where the order was placed"
+      - name: product_id
+        description: "Identifier for the product"
+        tests:
+          - unique
+          - not_null
+      - name: cust_id
+        description: "Unique identifier for the customer"
+      - name: order_Quantity
+        description: "Quantity of the product ordered"
+      - name: shipping_Cost
+        description: "Cost of shipping"
+      - name: order_id
+        description: "Unique identifier for the order"
+        tests:
+          - unique
+          - not_null
+      - name: ship_mode
+        description: "Mode of shipping"
+      - name: ship_date
+        description: "Date when the order was shipped"
+      - name: ship_id
+        description: "Unique identifier for the shipment"
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: "Date when the order was placed"
+      - name: order_priority
+        description: "Priority level of the order"
+      - name: ord_id
+        description: "Unique identifier for the order"
+        tests:
+          - unique
+          - not_null
+      - name: Delayed_In_Days
+        description: "Number of days delayed in shipping"
+      - name: support
+        description: "Boolean value indicating if the order is supported"
+        tests:
+          - not_null

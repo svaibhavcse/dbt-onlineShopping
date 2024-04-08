@@ -1,0 +1,41 @@
+version : 2
+models:
+  - name : mart_markets
+    description : customers not in NUNAVUT region and product information
+    columns:
+      - name: Ord_id
+        description : order id
+        tests:
+          - unique
+          - not_null
+      - name: Prod_id
+        description : product id
+        tests:
+          - unique
+          - not_null
+      - name: Ship_id
+        description : shipment id
+        tests:
+          - unique
+          - not_null
+      - name: Cust_id
+        description : customer id
+        tests:
+          - unique
+          - not_null
+      - name: sales
+        description : sales price
+      - name: Discount
+        description : discount price
+      - name: Order_Quantity
+        description : order quantity
+      - name: profit
+        description : profit
+      - name: Shipping_Cost
+        description : shipping costs
+      - name: Product_Base_Margin
+        description : Product_Base_Margin
+      - name: product_category
+        description : product_category 
+      - name: product_sub_category
+        description : product_sub_category

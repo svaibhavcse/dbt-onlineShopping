@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_customers
+    columns:
+        - name: cust_id
+          description : customer id info
+          tests:
+            - unique
+            - not_null
+        - name: most_recent_date
+          description : date of recent order
+        - name: first_ordered_date
+          description : date of first order
+        - name: lifetime_order_value
+          description : total value ordered by the customer
+        - name: total_orders
+          description : total orders
